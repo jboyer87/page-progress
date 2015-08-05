@@ -1,5 +1,5 @@
 body {
-	color: rgba(0,0,0,.87);
+	color: rgba(0, 0, 0, .87);
 	font-family: "Lora", serif;
 	font-size: 18px;
 	letter-spacing: .01rem;
@@ -8,7 +8,7 @@ body {
 }
 
 code {
-	background-color: rgba(0,0,0,.2);
+	background-color: rgba(0, 0, 0, .2);
 	font-size: 18px;
 	padding: 4px;
 }
