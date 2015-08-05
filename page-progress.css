@@ -1,0 +1,20 @@
+.ppProgressBarContainer {
+	background-color: rgba(0,0,0,.2); /* Change the background-color to change the portion of the progress bar that is unfilled */
+	/* background-color: rgba(0,0,0,.2); /* Optionally, omit the background-color for a transparent bar (Delete the line above!) */
+	height: 1em; /* Customize the progress bar background in px, em, etc. Change this in tandem with ppProgressBar's height*/
+	position: fixed;
+	/* Positioning */
+		top: 0; /* Set top: 0; to fix the progress bar to the top of the browser window */
+		/* bottom: 0; /* Set bottom: 0; to fix the progress bar to the bottom of the browser window */
+	width: 100%;
+}
+
+.ppProgressBar {
+	background-color: darkblue; /* Change the background-color to change the color of the progress bar */
+	min-width: 1em; /* The smallest the progress bar will ever be */
+	height: 1em; /* Customize the progress bar height in px, em, etc. Change this in tandem with ppProgressBarContainer's height */
+	transition: width .25s ease-out;
+	--webkit-transition: width .25s ease-out;
+	--moz-transition: width .25s ease-out;
+	width: 1em; /* Initial width on page load */
+}

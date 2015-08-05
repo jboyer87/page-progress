@@ -1,0 +1,25 @@
+body {
+	color: rgba(0,0,0,.87);
+	font-family: "Lora", serif;
+	letter-spacing: .01rem;
+	line-height: 2em;
+	margin: 0;
+}
+
+p {
+	font-size: 18px;
+	text-align: justify;
+	text-indent: 3em;
+}
+
+.article-container {
+	float: left;
+	max-width: 50%;
+	margin: 5em;
+}
+
+.extra-container {
+	margin: 5em;
+	position: fixed;
+	right: 0;
+}
