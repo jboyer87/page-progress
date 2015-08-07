@@ -6,7 +6,8 @@
 	<!-- Get that Time New Roman out of here! -->
 	<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="demo.css">
-	<link rel="stylesheet" href="page-progress.min.css">
+	<!--<link rel="stylesheet" href="page-progress.min.css">-->
+	<link rel="stylesheet" href="page-progress.css">
 </head>
 <body>
 <div class="ppProgressBarContainer"><div class="ppProgressBar"></div></div>
@@ -18,7 +19,8 @@
 
 		<h2>Features</h2>
 		
-		<p><b>Save your place</b> -- As the user scrolls, progress is tracked in pixels and the URL is updated on each scroll event to include the offset from the top of the page. When a page is bookmarked, or linked to, <b>Page Progress</b> uses the value in the URL and automatically scrolls to that point. Give it a try by opening <a target="_blank" href="index.html#500">this page in a new window</a>.</p>
+		<p><b>Save your place</b> -- A <code>.ppBookmark</code> element can be used to save a user's place. When the bookmark link is clicked, progress is calculated in pixels and the URL is updated to include the offset in pixels from the top of the page. When progress is saved, and a page is bookmarked, or linked to, <b>Page Progress</b> inserts a hash value into the URL and upon loading will automatically scroll to that point. Give it a try by opening <a target="_blank" href="index.html#500">this page in a new window</a>.</p>
+		<p>Click the link to <a class="ppBookmark" href="javascript:void(0);">save your place</a>
 
 		<h2>Usage</h2>
 		
@@ -53,7 +55,7 @@
 
 		<p>Modify the page-progress.js file to turn the bookmark function on or off:</p>
 		<ul>
-			<li>Simply remove lines 15-19 and lines 22-28 to remove the bookmark function. They are clearly marked with <code>Bookmark function</code></p></li>	
+			<li>Simply remove lines that are clearly marked within the <code>Bookmark function</code> comment blocks.</p></li>	
 		</ul>
 
 	
@@ -88,10 +90,13 @@
 	</div>
 	<div class="extra-container">
 		<a href="http://www.github.com/jboyer87/page-progress"><img src="github.png"></a><br>
-		<strong><a href="http://www.github.com/jboyer87/page-progress">View on Github</a></strong>
+		<strong><a href="http://www.github.com/jboyer87/page-progress">View on Github</a></strong><br>
+		<strong><a href="javascript:void(0);" class="ppBookmark">Save my place</a></strong>
 	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="dotimeout.min.js"></script>
-<script src="page-progress.min.js"></script>
+<!--<script src="page-progress.min.js"></script>-->
+<script src="dotimeout.min.js"></script>
+<script src="page-progress.js"></script>
 </body>
 </html>

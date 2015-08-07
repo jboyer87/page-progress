@@ -18,3 +18,21 @@
 	--moz-transition: width .25s ease-out;
 	width: 1em; /* Initial width on page load */
 }
+
+.ppSavePlace {
+	bottom: 5em;
+	margin-right: 5em;
+	right: 0;
+	position: fixed;
+}
+
+.ppToast {
+	background-color: rgba(0, 0, 0, .2);
+	border-radius: 5px;
+	bottom: 1em; 
+	display: none;
+	padding: .5em 1em;
+	position: fixed; 
+	right: 1em; 
+}
+
