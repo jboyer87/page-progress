@@ -2,17 +2,15 @@
 
 _Because some pages are **long!**_
 
-[Demo](http://www.jamesjboyer.com/projects/page-progress)
-
 **Page Progress** is a simple jQuery reading progress line. When included on a page, a progress bar will appear along the edge of the browser window to let the reader know how far they have progressed through a page.
 
 ## Features
 
-**Save your place** -- As the user scrolls, progress is tracked in pixels and the URL is updated on each scroll event to include the offset from the top of the page. When a page is bookmarked, or linked to, **Page Progress** uses the value in the URL and automatically scrolls to that point. Give it a try by opening [this page in a new window](index.html#500).
+**Save your place** -- A `.ppBookmark` element can be used to save a user's place. When the bookmark link is clicked, progress is calculated in pixels and the URL is updated to include the offset in pixels from the top of the page. When progress is saved, and a page is bookmarked, or linked to, **Page Progress** inserts a hash value into the URL and upon loading will automatically scroll to that point. Give it a try by opening [this page in a new window](index.html#500).
 
 ## Usage
 
-To use Page Progress, include **jQuery**,  **dotimeout.min.js [credit](http://benalman.com/projects/jquery-dotimeout-plugin/)**, **page-progress.min.js**, and **page-progress.min.css** on your page, and you're ready to go.
+To use Page Progress, include **jQuery**, **dotimeout.min.js** [[Credit](http://benalman.com/projects/jquery-dotimeout-plugin/)], **page-progress.min.js**, and **page-progress.min.css** on your page, and you're ready to go.
 
 ### Customization
 
@@ -29,8 +27,12 @@ Customize the **page-progress.css** file to change the look and feel of the prog
     *   Change the `height` value to adjust the progress bar's height. This should correspond with the `height` property for `.ppProgressBarContainer`.
     *   `width` is set to allow for an animation on page load. Remove the `width` and `min-width` properties to get rid of this.
 
+*   `.ppToast` is an optional floating toast notification that fires when a `.ppBookmark` element has been clicked:
+    *   Modify the `background-color` property to change the color of the toast notification.
+    *   Change the appearance and position by modifiying the values for `border-radius`, `padding`, and `position`. `display` should be left as `none` for the fade in/out to function properly.
+
 ### Configuration
 
 Modify the page-progress.js file to turn the bookmark function on or off:
 
-*   Simply remove lines 15-19 and lines 22-28 to remove the bookmark function. They are clearly marked with `Bookmark function`
+*   Simply remove lines that are clearly marked within the `Bookmark function` comment blocks.
