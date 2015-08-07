@@ -19,20 +19,13 @@
 	width: 1em; /* Initial width on page load */
 }
 
-.ppSavePlace {
-	bottom: 5em;
-	margin-right: 5em;
-	right: 0;
-	position: fixed;
-}
-
 .ppToast {
-	background-color: rgba(0, 0, 0, .2);
-	border-radius: 5px;
-	bottom: 1em; 
-	display: none;
-	padding: .5em 1em;
-	position: fixed; 
-	right: 1em; 
+	background-color: rgba(0, 0, 0, .2); /* Modify this to change the background color of the toast notification*/
+	border-radius: 5px; /* Rounded corners -- Remove this to have sharp edges instead */
+	display: none; /* Must be left to display: none to allow the element to fade in and out */
+	padding: .5em 1em; /* Padding of the toast box */
+	position: fixed; /* Toast is fixed (scrolls with the window) at the position specified below */
+		bottom: 1em;
+		right: 1em;
 }
 
