@@ -2,7 +2,7 @@
 
 _Because some pages are **long!**_
 
-[Demo](http://wwww.jamesjboyer.com/projects/page-progress)
+[Demo](http://www.jamesjboyer.com/projects/page-progress)
 
 **Page Progress** is a simple jQuery reading progress line. When included on a page, a progress bar will appear along the edge of the browser window to let the reader know how far they have progressed through a page.
 
