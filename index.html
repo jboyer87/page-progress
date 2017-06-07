@@ -3,11 +3,47 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Page-Progress Example</title>
-	<!-- Get that Time New Roman out of here! -->
 	<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="demo.css">
-	<!--<link rel="stylesheet" href="page-progress.min.css">-->
-	<link rel="stylesheet" href="page-progress.css">
+	<style type="text/css">
+		body {
+			color: rgba(0, 0, 0, .87);
+			font-family: "Lora", serif;
+			font-size: 18px;
+			letter-spacing: .01rem;
+			line-height: 2em;
+			margin: 0;
+		}
+
+		code {
+			background-color: rgba(0, 0, 0, .2);
+			font-size: 18px;
+			padding: 4px;
+		}
+
+		p {
+			font-size: 18px;
+			margin-bottom: .5em;
+			text-align: justify;
+		}
+
+		.article-container {
+			float: left;
+			max-width: 50%;
+			margin: 5em;
+		}
+
+		.extra-container {
+			margin: 5em;
+			position: fixed;
+			right: 0;
+			text-align: center;
+		}
+
+		h1, h2, h3 {
+			line-height: 2.25em;
+			margin-top: .5em;
+		}
+	</style>
 </head>
 <body>
 <div class="ppProgressBarContainer"><div class="ppProgressBar"></div></div>
@@ -102,12 +138,8 @@
 		<a href="http://www.github.com/jboyer87/page-progress"><img src="github.png"></a><br>
 		<strong><a href="http://www.github.com/jboyer87/page-progress">View on Github</a></strong><br>
 		<strong><a href="javascript:void(0);" class="ppBookmark">Save my place</a></strong><br>
-		<strong><a href="http://blog.jamesjboyer.com">Back to the blog</a></strong>
 	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="dotimeout.min.js"></script>
-<!--<script src="page-progress.min.js"></script>-->
-<script src="dotimeout.min.js"></script>
 <script src="page-progress.js"></script>
 </body>
 </html>
