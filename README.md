@@ -12,7 +12,7 @@ _Because some pages are **long!**_
 
 ## Usage
 
-To use Page Progress, include **jQuery**, **dotimeout.min.js** [[Credit](http://benalman.com/projects/jquery-dotimeout-plugin/)], **page-progress.min.js**, and **page-progress.min.css** on your page, and you're ready to go.
+To use Page Progress, include **jQuery**, **page-progress.js**, and **page-progress.css** on your page, and you're ready to go.
 
 ### Customization
 
